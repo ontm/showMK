@@ -5,6 +5,11 @@
 在 macOS 菜单栏查看一台蓝牙鼠标和一台蓝牙键盘是否已连接。  
 See whether your Bluetooth mouse and keyboard are connected, right in the macOS menu bar.
 
+## 版本 / Versions
+
+- **[v0.2.1 · showMK Notify](showMK-Notify/README.md)** — 在菜单栏状态基础上，设备接入／移出时在屏幕中下部弹出系统风格 HUD 提示；弹窗可在「设置 → 弹窗提示」开关。（最新 / latest）
+- **v0.1（本目录）** — 仅菜单栏连接状态，无弹窗提示。源码与分发包见下方及 [v0.1 Release](https://github.com/ontm/showMK/releases/tag/v0.1)。
+
 | 分发包 / Archive | 架构 / CPU | 最低系统 / Minimum macOS |
 | --- | --- | --- |
 | `showMK-macOS-universal.zip` | Apple Silicon + Intel | 14.0 |

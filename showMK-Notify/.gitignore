@@ -1,0 +1,9 @@
+.build/
+showMK-Notify.app/
+dist/
+.workbuddy/
+preview/
+*.log
+.DS_Store
+# 双机协作交接单：本地/文件共享使用，不上传 Git
+HANDOFF.md
