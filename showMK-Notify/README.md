@@ -68,6 +68,7 @@ swiftc Sources/showMKNotify/main.swift -target arm64-apple-macos14.0 \
 - 已在 Apple Silicon 开发机验证：通用架构（arm64 + x86_64，最低 macOS 14.0）、签名、`--dump` 采样、离线自检 9 项、提示窗口实拍（含圆角阴影修复）。
 - 已在真实 Intel Mac / macOS 12.4 验证：本机编译 x86_64（minos 12.4）、静态检查、离线自检 9 项、7 项兼容点逐项实测、HUD 实拍。Intel 机的 Swift 5.3 兼容降级与圆角阴影修复已合并进本版本。
 - 尚未验证：真实设备插拔触发的端到端流程（需在两台 Mac 上切换外设确认）；绑定菜单与弹窗开关的 GUI 点击自动化。
+- **已知差异**：v0.2.1 的 Intel/macOS 12.4 预编译包由 Intel 机在本机编译于步骤②，其时源码的蓝牙总状态图标仍使用 `bluetooth` 符号；开发机步骤③将其替换为 macOS 通用可用的 `antenna.radiowaves.left.and.right` 符号（universal 包已含此修复）。因此该 Intel 包在 HUD 的蓝牙总状态图标上可能与当前源码不一致。如需该图标一致，请在 Intel/macOS 12.4 机器上用当前源码重新编译。
 
 ## 许可
 
